@@ -10,6 +10,7 @@ import { BasicComponent } from './basic/basic.component';
 import { AdvancedComponent } from './advanced/advanced.component';
 import { ContainedComponent } from './contained/contained.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { AnimboxComponent } from './animbox/animbox.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     AdvancedComponent,
     ContainedComponent,
     NotfoundComponent,
+    AnimboxComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
