@@ -110,8 +110,33 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AnimboxComponent implements OnInit {
   @Input() currentState;
+  msg = 'rest';
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  animationBegin(e) {
+    this.msg =
+      e.phaseName +
+      ': ' +
+      e.fromState +
+      ' => ' +
+      e.toState +
+      ' [' +
+      e.totalTime +
+      '] ';
+  }
+
+  animationEnd(e) {
+    this.msg =
+      e.phaseName +
+      ': ' +
+      e.fromState +
+      ' => ' +
+      e.toState +
+      ' [' +
+      e.totalTime +
+      '] ';
+  }
 }
