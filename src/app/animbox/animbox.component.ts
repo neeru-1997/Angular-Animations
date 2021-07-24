@@ -27,8 +27,24 @@ import { Component, Input, OnInit } from '@angular/core';
           transform: 'scale(1.7)',
         })
       ),
+      state(
+        'delaying',
+        style({
+          backgroundColor: '#812170',
+          transform: 'scale(1.6)',
+        })
+      ),
+      state(
+        'easing',
+        style({
+          backgroundColor: '#985b00',
+          transform: 'scale(2.2)',
+        })
+      ),
       transition('* => basic', animate('800ms')),
       transition('* => original', animate('200ms')),
+      transition('* => delaying', animate('800ms 1200ms ease-out')),
+      transition('* => easing', animate('800ms ease-in-out')),
     ]),
   ],
 })
