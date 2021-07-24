@@ -138,5 +138,9 @@ export class AnimboxComponent implements OnInit {
       ' [' +
       e.totalTime +
       '] ';
+
+    setTimeout(() => {
+      this.msg = '';
+    }, 3000);
   }
 }
