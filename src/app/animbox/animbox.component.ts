@@ -1,5 +1,6 @@
 import {
   animate,
+  group,
   keyframes,
   state,
   style,
@@ -49,6 +50,13 @@ import { Component, Input, OnInit } from '@angular/core';
           transform: 'scale(1)',
         })
       ),
+      state(
+        'parallel',
+        style({
+          backgroundColor: '#065e65',
+          transform: 'scale(0.4)',
+        })
+      ),
       transition('* => basic', animate('800ms')),
       transition('* => original', animate('200ms')),
       transition('* => delaying', animate('800ms 1200ms ease-out')),
@@ -81,6 +89,22 @@ import { Component, Input, OnInit } from '@angular/core';
           ])
         )
       ),
+      transition('* => parallel', [
+        group([
+          animate(
+            '1000ms ease-out',
+            style({
+              backgroundColor: '#065e65',
+            })
+          ),
+          animate(
+            '2000ms ease-out',
+            style({
+              transform: 'scale(0.4)',
+            })
+          ),
+        ]),
+      ]),
     ]),
   ],
 })
