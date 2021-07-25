@@ -12,6 +12,7 @@ import { ContainedComponent } from './contained/contained.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AnimboxComponent } from './animbox/animbox.component';
 import { MouseComponent } from './mouse/mouse.component';
+import { FadeblockComponent } from './fadeblock/fadeblock.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MouseComponent } from './mouse/mouse.component';
     NotfoundComponent,
     AnimboxComponent,
     MouseComponent,
+    FadeblockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
