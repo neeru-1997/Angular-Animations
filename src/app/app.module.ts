@@ -11,6 +11,7 @@ import { AdvancedComponent } from './advanced/advanced.component';
 import { ContainedComponent } from './contained/contained.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AnimboxComponent } from './animbox/animbox.component';
+import { MouseComponent } from './mouse/mouse.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AnimboxComponent } from './animbox/animbox.component';
     ContainedComponent,
     NotfoundComponent,
     AnimboxComponent,
+    MouseComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
