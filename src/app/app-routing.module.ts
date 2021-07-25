@@ -10,23 +10,48 @@ const routes: Routes = [
   {
     path: 'animation-home',
     component: HomeComponent,
+    data: {
+      animation: {
+        value: 'home',
+      },
+    },
   },
   {
     path: 'animation-basics',
     component: BasicComponent,
+    data: {
+      animation: {
+        value: 'basics',
+      },
+    },
   },
   {
     path: 'animation-contained',
     component: ContainedComponent,
+    data: {
+      animation: {
+        value: 'contained',
+      },
+    },
   },
   {
     path: 'animation-advanced',
     component: AdvancedComponent,
+    data: {
+      animation: {
+        value: 'advanced',
+      },
+    },
   },
   {
     path: '',
     redirectTo: '/animation-home',
     pathMatch: 'full',
+    data: {
+      animation: {
+        value: 'home',
+      },
+    },
   },
   {
     path: '**',
